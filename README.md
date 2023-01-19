@@ -1,2 +1,2 @@
-# Matrix
-A matrix terminal effect for inux
+# Terminal screensaver
+A terminal screensaver for inux
