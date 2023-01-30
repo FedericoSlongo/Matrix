@@ -69,11 +69,6 @@ int main(){
         }
     #endif
 
-    printf("If you don't want a delay insert 0 (reccomended)\nIf you want to have a delay between printing of each new character insert the dalay (in second)\n");
-    fflush(stdin);
-    scanf("%d",&delay);
-    fflush(stdin);
-
     while(true){
         //The code that randomly decides what character will be printed next
         switch (rand() % 3)
@@ -90,10 +85,6 @@ int main(){
         default:
             break;
         }
-
-        //Sleep even if set to 0 seems to introduce a delay so I just skip it if it's not needed
-        if(!(delay == 0))
-            _sleep(delay);
 
         //Prints things 
         for (int i = 0; i < (rand() % (30 - 3 + 1)) + 3; i++)
